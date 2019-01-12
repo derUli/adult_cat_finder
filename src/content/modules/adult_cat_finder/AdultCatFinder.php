@@ -7,7 +7,7 @@ class AdultCatFinder extends MainClass
 
     public function frontendFooter()
     {
-        if (! is_mobile() || is_tablet()) {
+        if (is_desktop()) {
             echo Template::executeModuleTemplate(self::MODULE_NAME, "cat.php");
         }
     }
